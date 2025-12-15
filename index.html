@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>HerbaFresh | Starting Business Marketing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h2>Starting Business Marketing - HerbaFresh</h2>
+</header>
+
+<!-- HALAMAN LOGIN -->
+<div class="container login-box" id="loginPage">
+    <div class="card">
+        <h3>Login</h3>
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="login()">Login</button>
+        <p id="loginError" class="error"></p>
+    </div>
+</div>
+
+<!-- HALAMAN UTAMA -->
+<div class="container hidden" id="homePage">
+
+    <div class="card">
+        <h3>Penentuan Masalah</h3>
+        <p>
+            Pelaku usaha pemula sering mengalami kesulitan dalam memasarkan produk secara digital.
+            Promosi masih dilakukan secara manual sehingga jangkauan konsumen terbatas.
+            Oleh karena itu, dibutuhkan sebuah website sederhana sebagai media digital marketing
+            untuk memperkenalkan dan menampilkan produk HerbaFresh.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>Upload Gambar Produk HerbaFresh</h3>
+        <input type="file" id="imageInput" accept="image/*">
+        <button onclick="uploadImage()">Upload Produk</button>
+        <div id="productGallery"></div>
+    </div>
+
+    <button class="logout" onclick="logout()">Logout</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
